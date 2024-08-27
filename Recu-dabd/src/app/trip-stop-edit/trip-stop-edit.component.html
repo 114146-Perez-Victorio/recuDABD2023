@@ -1,0 +1,29 @@
+<form class="row g-3 needs-validation">
+    <div class="d-grid">
+      <button class="btn btn-secondary" type="button">Agregar Parada</button>
+    </div>
+    <div>
+        <div>
+          <h4>Nro parada:</h4>
+        </div>
+        <div class="col-md-12">
+          <label for="locationInput" class="form-label">Lugar</label>
+          <input type="text" class="form-control" id="locationInput" formControlName="location">
+        </div>
+        <div class="col-md-12">
+          <label for="timeInput" class="form-label">Hora</label>
+          <input type="text" class="form-control" id="timeInput" formControlName="time">
+        </div>
+        <div class="col-md-12">
+          <label for="stopTimeInput" class="form-label">Tiempo</label>
+          <input type="number" class="form-control" id="stopTimeInput" formControlName="stopTime">
+        </div>
+      </div>
+      
+  
+    <div class="col-12">
+      <button class="btn btn-submit" type="button">Cancelar</button>
+      <button class="btn btn-primary" type="button" (click)="agregarParada()">Guardar</button>
+    </div>
+  </form>
+  

@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Origen</th>
+      <th scope="col">Destino</th>
+      <th scope="col">Fecha y Hora</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Paradas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trip of trips; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ getNombreCiudad(trip.originId) }}</td>
+      <td>{{ getNombreCiudad(trip.destinationId) }}</td>
+      <td>{{ trip.departureDate +'-'+ trip.departureTime }}</td>
+      <td>{{ '$' + trip.price }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let parada of trip.stops">{{ parada.stopTime + ': ' + parada.location }}</li>
+        </ul>
+      </td>
+      <td><button (click)="editarViaje(trip)" class="btn btn-secondary">Editar</button></td>
+    </tr>
+  </tbody>
+</table>

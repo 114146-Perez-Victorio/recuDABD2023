@@ -1,0 +1,38 @@
+<form [formGroup]="formViaje" class="row g-3 needs-validation" (ngSubmit)="onSubmit()">
+  <div class="col-md-6">
+    <label for="originSelect" class="form-label">Origen</label>
+    <select class="form-select" id="originSelect" formControlName="originId">
+      <option *ngFor="let ciudad of ciudades" [value]="ciudad.id">{{ ciudad.name }}</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="destinationSelect" class="form-label">Destino</label>
+    <select class="form-select" id="destinationSelect" formControlName="destinationId">
+      <option *ngFor="let ciudad of ciudades" [value]="ciudad.id">{{ ciudad.name }}</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="destinationSelect" class="form-label">Fecha de salida: </label>
+    <input type="date" formControlName="departureDate">
+  </div>
+  <div class="col-md-6">
+    <label for="destinationSelect" class="form-label">Hora de salida: </label>
+    <input type="" formControlName="departureDate">
+  </div>
+  <div class="col-md-6">
+    <label for="destinationSelect" class="form-label">Precio: </label>
+    <input type="number" formControlName ="price">
+  </div>
+ 
+  <div>
+    <h3>Paradas:</h3>
+    <!-- Implementa el accordion aquí -->
+    
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-secondary" type="button">Cancelar</button>
+    <button class="btn btn-primary" type="submit">Continuar</button>
+  </div>
+</form>
+<ba-trip-stop-edit></ba-trip-stop-edit>

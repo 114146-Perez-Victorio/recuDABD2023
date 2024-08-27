@@ -1,0 +1,35 @@
+{
+  "cities": [
+    {
+      "id": "15fc2a5e-0891-4474-8bad-ecc2d36332cf",
+      "name": "Villa Maria"
+    },
+    {
+      "id": "8b48c338-b08c-4c31-8d5f-963ef9feea9f",
+      "name": "Campana"
+    },
+    {
+      "id": "4562c463-8680-45aa-9a11-d7dd5b52bacf",
+      "name": "San Nicolas"
+    },
+    {
+      "id": "0aba3d2c-ca83-4f72-b226-a4942341841a",
+      "name": "Rio Cuarto"
+    },
+    {
+      "id": "1196b70b-8ad4-489f-b148-7d7a305dfff1",
+      "name": "La Falda"
+    }
+  ],
+  "trips": [
+    {
+      "id": "30e47bd9-0331-446a-bcdd-9780e496d77b",
+      "originId": "8b48c338-b08c-4c31-8d5f-963ef9feea9f",
+      "destinationId": "0aba3d2c-ca83-4f72-b226-a4942341841a",
+      "departureDate": "27/11/2023",
+      "departureTime": "22:00",
+      "price": 16001,
+      "stops": []
+    }
+  ]
+}
